@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+exportPattern("^[^\\.]")
+exportMethods(naten, betaqn, nanet, nanes, danes, danet, daten1, daten2, nasen, dasen,
+danen, tost, fuks, swan, dmrse, dmrse_row, dmrse_col, genki, seabi, pfilter)
+import(wateRmelon,gdsfmt, methods)
