@@ -7,7 +7,7 @@ Author: Tyler Gorrie-Stone, Ayden Saffari, Karim Malki, Leonard C Schalkwyk
 Maintainer: Tyler Gorrie-Stone <tgorri@essex.ac.uk>
 Description: Methods for working with Illumina arrays using gdsfmt.
 License: GPL-3
-Depends: R (>= 2.10), wateRmelon (>= 1.17.0), gdsfmt (>= 1.0.4),
+Depends: R (>= 2.10), wateRmelon (>= 1.17.1), gdsfmt (>= 1.0.4),
         methods
 Enhances: minfi, methylumi
 Suggests: BiocGenerics, BiocStyle

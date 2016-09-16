@@ -316,7 +316,7 @@ setMethod(
 ) # TGS - OK - Test Again.
 
 # naten <- function (mn, un, fudge=100 ) {  # beta1
- setGeneric("naten", function(mn, ...){standardGeneric("naten")}) 
+# setGeneric("naten", function(mn, ...){standardGeneric("naten")}) 
 # Overwrites method for wateRmelon, reconsider... (edit watermelon)
 setMethod(
   f = "naten",
@@ -350,7 +350,7 @@ setMethod(
   }
 ) # TGS - OK - Test Again.
 
- setGeneric("nanet", function(mn,...){standardGeneric("nanet")}) 
+# setGeneric("nanet", function(mn,...){standardGeneric("nanet")}) 
 # Overwrites method  for wateRmelon, reconsider... (edit watermelon)
 # nanet <- function(mn, un, fudge=100){ dyebuy1
 setMethod(
@@ -563,7 +563,7 @@ setMethod(
   }
 ) # TGS - OK - Test Again.
 
-setGeneric("nasen", function(mns,...){standardGeneric("nasen")}) 
+#setGeneric("nasen", function(mns,...){standardGeneric("nasen")}) 
 # Overwrites method  for wateRmelon, reconsider... (edit watermelon)
 setMethod(
   f = "nasen",
