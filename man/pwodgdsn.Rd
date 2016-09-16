@@ -2,7 +2,7 @@
 \alias{pwod.gdsn}
 \alias{pwod, gds.class}
 \alias{pwod, gdsn.class}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Probe-Wise Outlier Detection
 }
@@ -12,7 +12,7 @@ Probe-Wise Outlier Detection
 \usage{
 pwod.gdsn(node, mul = 4)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{node}{
 gdsn.class object containing array to be filtered
@@ -31,34 +31,22 @@ Detects outlying probes across arrays in methylumi and minfi
 \value{
 Nothing returned. Supplied gds object will have new node with outlier probes coerced to NAs
 }
-%\references{
-%% ~put references to the literature/web site here ~
-%}
+
 \author{
 Tyler Gorrie-Stone
 }
-%\note{
-%%  ~~further notes~~
-%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 \code{\link[wateRmelon]{pwod}}
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+
 data(melon)
 e <- es2gds(melon, "melon.gds")
 pwod(e)
-# Or can use pwod(betas(e))
 closefn.gds(e)
 unlink("melon.gds")
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

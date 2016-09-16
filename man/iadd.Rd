@@ -63,14 +63,13 @@ Who to contact: <tgorri@essex.ac.uk>
 }
 
 \examples{
-#in order for these examples to work you must have IDAT files in the current 
-#working directory and change "barcode" to match the barcode of the files
+barcodes <- "barcodes or Path to barcodes"
 \dontrun{
-m <- methylumIDAT("barcode")
+m <- methylumIDAT(barcodes)
 e <- es2gds(m,"barcode.gds")
-i <- iadd("barcode",e)
+i <- iadd(barcodes,e)
 
-i <- iadd2("Data/IDATLocations/Exp1/", e)
+i <- iadd2(barcodes, e)
 }
 }
 

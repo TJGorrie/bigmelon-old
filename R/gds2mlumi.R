@@ -46,8 +46,8 @@ gds2mlumi <- function(gds, i, j){
     colnames(qcm) <- colnames(qcu) <- colnames(x)
     rownames(qcm) <- rownames(qcu) <- QCrownames(x)
 
-    qc <- new("MethyLumiQC", assayData = assayDataNew(methylated   = qcm[ , j, drop = F],
-                                                      unmethylated = qcu[ , j, drop = F])
+    qc <- new("MethyLumiQC", assayData = assayDataNew(methylated   = qcm[ , j, drop = FALSE],
+                                                      unmethylated = qcu[ , j, drop = FALSE])
           )
   
     x.lumi@QC <- qc

@@ -12,6 +12,9 @@ Small MethyLumi 450k data sets intended for testing purposes only.
 data(cantaloupe)
 data(honeydew)
 }
+\value{
+Loads data into R
+}
 \format{
 cantaloupe: MethyLumiSet with assayData containing 841 features, 3 samples.
 honeydew: MethyLumiSet with assayData containing 841 features, 4 samples.

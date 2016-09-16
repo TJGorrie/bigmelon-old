@@ -26,26 +26,13 @@ Creates a .gds file.
 \value{
 A gds.class object
 }
-%\references{
-%% ~put references to the literature/web site here ~
-%}
+
 \author{
 Tyler Gorrie-Stone
 }
-%\note{
-%%  ~~further notes~~
-%}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-%\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-%}
 \examples{
-\dontrun{finalreport2gds("finalreport.txt", gds="finalreport.gds")}
+finalreport <- "finalreport.txt"
+\dontrun{finalreport2gds(finalreport, gds="finalreport.gds")}
 }
 
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
