@@ -28,13 +28,9 @@ Detects outlying probes across arrays in methylumi and minfi
      objects. Outliers are probable low MAF/SNP heterozygotes. 
 
 }
-%\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%}
+\value{
+Nothing returned. Supplied gds object will have new node with outlier probes coerced to NAs
+}
 %\references{
 %% ~put references to the literature/web site here ~
 %}

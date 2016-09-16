@@ -55,7 +55,7 @@ qn.gdsn <- function(gds,
 
   # Creating new gdsnode with 'newnode' name
   n.t <- add.gdsn(gds, newnode, storage = "float64", 
-                  valdim = c(dim[1], 0), val = NULL, replace = T)
+                  valdim = c(dim[1], 0), val = NULL, replace = TRUE)
 
   # Reranking + Replacing Values
   for (x in 1:dim[2]){

@@ -84,6 +84,10 @@ exprs returns a data.frame of beta values for all probes across all samples.
 
 }
 
+\value{
+Returns specified node representing the called accessor
+}
+
 \author{
 Leonard C Schalkwyk, Ayden Saffari, Tyler Gorrie-Stone
 Who to contact: <tgorri@essex.ac.uk>

@@ -39,6 +39,10 @@ Will lose information relating to "pData". Therefore we recommend compiling sepa
 Tyler Gorrie-Stone <tgorri@essex.ac.uk>
 }
 
+\value{
+a new gds object that has both files within it
+}
+
 \examples{
 data(melon)
 a <- es2gds(melon[,1:6], "primary.gds")

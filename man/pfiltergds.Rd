@@ -33,6 +33,7 @@ than pnthresh, default = 1
 }
 }
 %\details{}
+\value{ See \code{\link[wateRmelon]{pfilter}}}
 \author{Tyler Gorrie-Stone, Original (wateRmelon) Function by Ruth Pidsley}
 \seealso{\code{\link[wateRmelon]{pfilter}}}
 \examples{

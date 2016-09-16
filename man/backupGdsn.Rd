@@ -33,6 +33,10 @@ gdsn.class object (a gds node)
 }
 }
 
+\value{
+gds object is modified to have a new folder 'backup' with supplied node copied inside
+}
+
 \author{
 Tyler Gorrie-Stone <tgorri@essex.ac.uk>
 }

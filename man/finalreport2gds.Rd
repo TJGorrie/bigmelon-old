@@ -42,7 +42,7 @@ Tyler Gorrie-Stone
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
 \examples{
-# finalreport2gds("finalreport.txt", gds="finalreport.gds")
+\dontrun{finalreport2gds("finalreport.txt", gds="finalreport.gds")}
 }
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the

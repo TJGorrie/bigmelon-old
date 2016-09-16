@@ -65,12 +65,13 @@ Who to contact: <tgorri@essex.ac.uk>
 \examples{
 #in order for these examples to work you must have IDAT files in the current 
 #working directory and change "barcode" to match the barcode of the files
-#m <- methylumIDAT("barcode")
-#e <- es2gds(m,"barcode.gds")
-#i <- iadd("barcode",e)
+\dontrun{
+m <- methylumIDAT("barcode")
+e <- es2gds(m,"barcode.gds")
+i <- iadd("barcode",e)
 
-#i <- iadd2("Data/IDATLocations/Exp1/", e)
-
+i <- iadd2("Data/IDATLocations/Exp1/", e)
+}
 }
 
 %%\keyword{ ~kwd1 }

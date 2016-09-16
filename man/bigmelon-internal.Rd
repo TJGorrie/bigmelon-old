@@ -70,6 +70,10 @@ from a .gds file (overwriting the existing).
 
 }
 
+\value{
+Nothing.
+}
+
 \author{
 Leonard C Schalkwyk, Ayden Saffari, Tyler Gorrie-Stone
 Who to contact: <tgorri@essex.ac.uk>
@@ -79,7 +83,12 @@ Who to contact: <tgorri@essex.ac.uk>
 \code{\link{bigmelon}}
 }
 
-%%\examples{
-%%}
+\examples{
+data(melon)
+gfile <- es2gds(melon, "melon.gds")
+betas(gfile)[1:5,1:3]
+closefn.gds(gfile)
+unlink("melon.gds")
+}
 
 \keyword{internal}

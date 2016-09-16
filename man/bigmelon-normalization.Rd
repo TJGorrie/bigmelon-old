@@ -94,6 +94,10 @@ Current methods supplied by default arguments will replace the raw intensities w
 normalized intensities. 
 }
 
+\value{
+Normalization methods return nothing but will affect the gds file and replace/add nodes if specified to.
+}
+
 \author{
 Tyler J Gorrie-Stone <tgorri@essex.ac.uk>
 }

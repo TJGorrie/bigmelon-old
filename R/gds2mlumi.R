@@ -14,16 +14,16 @@ gds2mlumi <- function(gds, i, j){
   history.submitted = as.character(Sys.time())
   x <- gds
   if("NBeads"%in%ls.gdsn(x)){
-    aDat <- assayDataNew(betas        = x[i, j, node = "betas", name = T, drop = F],
-                         pvals        = x[i, j, node = "pvals", name = T, drop = F],
-                         NBeads       = x[i, j, node = "NBeads", name = T, drop = F],
-                         methylated   = x[i, j, node = "methylated", name = T, drop = F],
-                         unmethylated = x[i, j, node = "unmethylated", name = T, drop = F])
+    aDat <- assayDataNew(betas        = x[i, j, node = "betas", name = TRUE, drop = FALSE],
+                         pvals        = x[i, j, node = "pvals", name = TRUE, drop = FALSE],
+                         NBeads       = x[i, j, node = "NBeads", name = TRUE, drop = FALSE],
+                         methylated   = x[i, j, node = "methylated", name = TRUE, drop = FALSE],
+                         unmethylated = x[i, j, node = "unmethylated", name = TRUE, drop = FALSE])
   } else {
-    aDat <- assayDataNew(betas        = x[i, j, node = "betas", name = T, drop = F],
-                         pvals        = x[i, j, node = "pvals", name = T, drop = F],
-                         methylated   = x[i, j, node = "methylated", name = T, drop = F],
-                         unmethylated = x[i, j, node = "unmethylated", name = T, drop = F])
+    aDat <- assayDataNew(betas        = x[i, j, node = "betas", name = TRUE, drop = FALSE],
+                         pvals        = x[i, j, node = "pvals", name = TRUE, drop = FALSE],
+                         methylated   = x[i, j, node = "methylated", name = TRUE, drop = FALSE],
+                         unmethylated = x[i, j, node = "unmethylated", name = TRUE, drop = FALSE])
   }
 
   # Creating empty MethylumiSet object.
@@ -32,15 +32,15 @@ gds2mlumi <- function(gds, i, j){
   # pData
   pdat <- pData(x)
   rownames(pdat) <- colnames(x)
-  pData(x.lumi) <- pdat[j, , drop = F]
+  pData(x.lumi) <- pdat[j, , drop = FALSE]
   
   # fData
   fdat <- fData(x)
   rownames(fdat) <- rownames(x)
-  fData(x.lumi) <- fdat[i, , drop = F]
+  fData(x.lumi) <- fdat[i, , drop = FALSE]
 
   # QC
-  if(length(grep("QC", ls.gdsn(x), ignore.case = T))>1){ # Probably a better method
+  if(length(grep("QC", ls.gdsn(x), ignore.case = TRUE))>1){ # Probably a better method
     qcm <- QCmethylated(x)
     qcu <- QCunmethylated(x)
     colnames(qcm) <- colnames(qcu) <- colnames(x)
@@ -70,7 +70,7 @@ gds2mlumi <- function(gds, i, j){
   return(x.lumi)
 }
 
-gds2mset <- function(gds,i,j,anno=NULL){
+gds2mset <- function(gds,i,j,anno = NULL){
 # Gds to MethylSet method
  ###
   # Converts gds.class objects into methylumiset objects. 
@@ -91,11 +91,11 @@ gds2mset <- function(gds,i,j,anno=NULL){
       stop("anno needs to be either: \'27k\', \'450k\', or \'epic\' or \'unknown\'")
     }
   }
-  M <- x[i = i, j = j,   "methylated", name = T, drop = F]
-  U <- x[i = i, j = j, "unmethylated", name = T, drop = F]
-  pd <- pData(x)[j, , drop = F]
+  M <- x[i = i, j = j,   "methylated", name = TRUE, drop = FALSE]
+  U <- x[i = i, j = j, "unmethylated", name = TRUE, drop = FALSE]
+  pd <- pData(x)[j, , drop = FALSE]
   rownames(pd) <- colnames(x)[j]
-  pd <- annotatedDataFrameFrom(object = as.matrix(pd), byrow = T)
+  pd <- annotatedDataFrameFrom(object = as.matrix(pd), byrow = TRUE)
 
   if(!is.null(anno)){
     if(anno=="27k"){ anno <- c("IlluminaHumanMethylation27k", "ilmn12.hg19")

@@ -31,9 +31,12 @@ methods for extraenous functions from wateRmelon see respective manual pages.
 \details{
 Filler Text
 }
+\value{
+Returns expected output of functions from wateRmelon
+}
 
 \seealso{
-\code{\link{bigmelon}}
+\code{\link{wateRmelon}}
 }
 
 %%\examples{
