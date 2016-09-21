@@ -14,17 +14,17 @@
 Functions ported from wateRmelon
 }
 \description{
-methods for extraenous functions from wateRmelon see respective manual pages. 
+methods for extraenous functions from wateRmelon see respective manual pages.
 }
 \usage{
 \S4method{qual}{gdsn.class,gdsn.class}(norm, raw)
 }
 \arguments{
 \item{norm}{
-  normalized node
+normalized node
 }
 \item{raw}{
-  raw node
+raw node
 }
 }
 

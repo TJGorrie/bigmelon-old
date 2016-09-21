@@ -6,16 +6,17 @@
 \description{
 The pfilter function filters data sets based on bead count and
 detection p-values.  The user can set their own thresholds or use
-the default pfilter settings. This specific function will take a Genomic Data Structure
-(GDS) file as input and perform pfilter similar to how \code{\link[wateRmelon]{pfilter}}
- in wateRmelon is performed.
+the default pfilter settings. This specific function will take a Genomic Data 
+Structure (GDS) file as input and perform pfilter similar to how 
+\code{\link[wateRmelon]{pfilter}} in wateRmelon is performed.
 }
 \usage{
-\S4method{pfilter}{gds.class}(mn, perCount = NULL, pnthresh = NULL, perc = NULL, pthresh = NULL)
+\S4method{pfilter}{gds.class}(mn, perCount = NULL, pnthresh = NULL, 
+perc = NULL, pthresh = NULL)
 }
 \arguments{
 \item{mn}{
- a gds object OR node corresponding to methylated intensities
+a gds object OR node corresponding to methylated intensities
 }
 \item{perCount}{
 remove sites having this percentage of samples with a beadcount <3, default = 5
@@ -24,8 +25,8 @@ remove sites having this percentage of samples with a beadcount <3, default = 5
 cut off for detection p-value, default= 0.05
 }
 \item{perc}{
-remove sample having this percentage of sites with a detection p-value greater than 
-pnthresh, default = 1
+remove sample having this percentage of sites with a detection p-value 
+greater than pnthresh, default = 1
 }
 \item{pthresh}{
 remove sites having this percentage of sample with a detection p-value greater

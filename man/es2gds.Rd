@@ -1,22 +1,24 @@
 \name{es2gds}
 \alias{es2gds}
 \title{
-Coersion method for MethyLumiSet, RGChannelSet or MethylSet to CoreArray Genomic Data Structure (GDS) data file
+Coersion method for MethyLumiSet, RGChannelSet or MethylSet to CoreArray 
+Genomic Data Structure (GDS) data file
 }
 \description{
-The es2gds function takes a MethyLumiSet, RGChannelSet or MethylSet data object and converts it into a CoreArray 
-Genomic Data Structure (GDS) data file (via the gdsfmt package), returning this as a 
-gds.class object for use with bigmelon. 
+The es2gds function takes a MethyLumiSet, RGChannelSet or MethylSet data object
+and converts it into a CoreArray Genomic Data Structure (GDS) data file 
+(via the gdsfmt package), returning this as a gds.class object for use 
+with bigmelon. 
 }
 \usage{
 es2gds(m, file, qc = TRUE)
 }
 
 \arguments{
-  \item{m}{
+\item{m}{
 A MethyLumiSet, RGChannelSet or MethylSet object
 }
-  \item{file}{
+\item{file}{
 A character string specifying the name of the .gds file to write to.
 }
 
@@ -43,7 +45,6 @@ Who to contact: <tgorri@essex.ac.uk>
 data(melon)
 #convert to gds
 e <- es2gds(melon,'melon.gds')
-
 closefn.gds(e)
 unlink('melon.gds')
 }

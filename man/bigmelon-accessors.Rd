@@ -70,15 +70,16 @@ prefix: for created names.
 }
 
 \details{
-Each function returns the data stored in the corresponding node as either a gdsn.class object
-or a matrix or data.frame. These are names following the conventions of the methylumi package
-and perform similar functions.
+Each function returns the data stored in the corresponding node as either a 
+gdsn.class object or a matrix or data.frame. These are names following the 
+conventions of the methylumi package and perform similar functions.
 
-Each function which returns a gdsn.class object can be indexed using matrix-like '[' operations. With an optional name argument which optionally allows for row and col names to
-be automatically appended to returned matrix. 
- 
-The QC functions (returns QCdata split into separate
-matrices for methylated values, unmethylated values, and probe names)
+Each function which returns a gdsn.class object can be indexed using 
+matrix-like '[' operations. With an optional name argument which optionally 
+allows for row and col names to be automatically appended to returned matrix. 
+
+The QC functions (returns QCdata split into separate matrices for methylated 
+values, unmethylated values, and probe names)
 
 exprs returns a data.frame of beta values for all probes across all samples.
 

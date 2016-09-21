@@ -17,35 +17,33 @@ iadd2(path, gds, chunksize = NULL, ...)
 }
 
 \arguments{
-  \item{bar}{
- The barcode for an IDAT file Or the file path of the file containing red or green channel
- intensities for that barcode (this will automatically 
- locate and import both files regardless of which one you provide)
+\item{bar}{
+The barcode for an IDAT file Or the file path of the file containing red or 
+green channel intensities for that barcode (this will automatically 
+locate and import both files regardless of which one you provide)
 }
-  \item{path}{
- The file path where (multiple) IDAT files exist. Iadd2 will process every idat within 
- the specified directory.
- }
-  \item{gds}{
+\item{path}{
+The file path where (multiple) IDAT files exist. Iadd2 will process every idat 
+within the specified directory.
+}
+\item{gds}{
 
- Either: 
- A gds.class object
- 
+Either: 
+A gds.class object
 
- Or:
- A character string specifying the name of an existing .gds file to write to.
- 
- 
- Or:
- A character string specifying the name of a new .gds file to write to
- 
+Or:
+A character string specifying the name of an existing .gds file to write to.
+
+Or:
+A character string specifying the name of a new .gds file to write to
+
 }
-  \item{chunksize}{
-  If NULL, iadd2 will read in all barcodes in one go. Or if supplied with a numeric value,
-  iadd2 will read in that number of idat files in batches
+\item{chunksize}{
+If NULL, iadd2 will read in all barcodes in one go. Or if supplied with 
+a numeric value, iadd2 will read in that number of idat files in batches
 }
-  \item{...}{
- Additional Arguments passed to \code{\link[wateRmelon]{methylumIDATepic}}.
+\item{...}{
+Additional Arguments passed to \code{\link[wateRmelon]{methylumIDATepic}}.
 }
 }
 
@@ -68,7 +66,6 @@ barcodes <- "barcodes or Path to barcodes"
 m <- methylumIDAT(barcodes)
 e <- es2gds(m,"barcode.gds")
 i <- iadd(barcodes,e)
-
 i <- iadd2(barcodes, e)
 }
 }

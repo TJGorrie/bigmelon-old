@@ -12,41 +12,37 @@ Probe-Wise Outlier Detection
 \usage{
 pwod.gdsn(node, mul = 4)
 }
-
 \arguments{
-  \item{node}{
+\item{node}{
 gdsn.class object containing array to be filtered
 }
-  \item{mul}{
+\item{mul}{
 Number of interquartile ranges used to determine outlying
-          probes. Default is 4 to ensure only very obvious outliers are
-          removed.
+probes. Default is 4 to ensure only very obvious outliers are
+removed.
 }
 }
 \details{
 Detects outlying probes across arrays in methylumi and minfi
-     objects. Outliers are probable low MAF/SNP heterozygotes. 
-
+objects. Outliers are probable low MAF/SNP heterozygotes. 
 }
 \value{
-Nothing returned. Supplied gds object will have new node with outlier probes coerced to NAs
+Nothing returned. Supplied gds object will have new node with outlier
+probes coerced to NAs
 }
 
 \author{
 Tyler Gorrie-Stone
 }
 
-
 \seealso{
 \code{\link[wateRmelon]{pwod}}
 }
 \examples{
-
 data(melon)
 e <- es2gds(melon, "melon.gds")
 pwod(e)
 closefn.gds(e)
 unlink("melon.gds")
-
 }
 

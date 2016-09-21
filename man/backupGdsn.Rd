@@ -1,11 +1,3 @@
-%backup.gdsn <- function(gds=NULL, node){
-%  # Quick function to quickly copy specific nodes into a new-folder 
-%  # called "backup". Really for personal use - not recommended for standard workflow.
-%  if(is.null(gds)) gds <- getfolder.gdsn(node)
-%  if(!("backup"%in%ls.gdsn(gds))) addfolder.gdsn(gds, "backup")
-%  copyto.gdsn(index.gdsn(gds, "backup"), index.gdsn(gds, node))
-%}
-
 \name{backup.gdsn}
 \alias{backup.gdsn}
 
@@ -14,8 +6,8 @@ Copy gds node to a backup folder within gds object
 }
 
 \description{
-Quick function that will copy designated gdsn.class node within a gds object to a 'backup'
-folder. If 'backup' folder does not exist, this is created. 
+Quick function that will copy designated gdsn.class node within a gds object 
+to a 'backup'folder. If 'backup' folder does not exist, this is created. 
 }
 
 \usage{
@@ -24,8 +16,9 @@ backup.gdsn(gds = NULL, node)
 
 \arguments{
 \item{gds}{
-If NULL, function will call \code{\link[gdsfmt]{getfolder.gdsn}} to find the root node. 
-Otherwise, user can specify a separate gds.class object to copy the specified node to.
+If NULL, function will call \code{\link[gdsfmt]{getfolder.gdsn}} to find the 
+root node. Otherwise, user can specify a separate gds.class object to copy 
+the specified node to.
 }
 
 \item{node}{
@@ -34,7 +27,8 @@ gdsn.class object (a gds node)
 }
 
 \value{
-gds object is modified to have a new folder 'backup' with supplied node copied inside
+gds object is modified to have a new folder 'backup' with supplied node 
+copied inside
 }
 
 \author{

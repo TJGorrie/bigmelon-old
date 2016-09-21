@@ -39,7 +39,8 @@ A character string specifying the name of the .gds file to write to.
 }
 
 \item{gds}{
-Either a gds.class object, or a character string specifying an existing .gds file.
+Either a gds.class object, or a character string specifying an existing 
+.gds file.
 }
 
 \item{x}{
@@ -63,10 +64,10 @@ passed on to '[' indexing operator.
 \details{
 newgds creates a new .gds file stub with the given name.
 handle is used by app2gds to return a file handle for the given object.
-findgdsobj is used by handle to search the workspace for a gds.class object linked to 
-the file name specified.
-subSet is used by internal functions to select a subset of rows (probes) and columns (samples) 
-from a .gds file (overwriting the existing).
+findgdsobj is used by handle to search the workspace for a gds.class object 
+linked to the file name specified.
+subSet is used by internal functions to select a subset of rows (probes) and 
+columns (samples) from a .gds file (overwriting the existing).
 
 }
 

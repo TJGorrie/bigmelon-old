@@ -1,11 +1,12 @@
 \name{app2gds}
 \alias{app2gds}
 \title{
-Append a MethyLumiSet object to a CoreArray Genomic Data Structure (GDS) data file
+Append a MethyLumiSet object to a CoreArray Genomic Data Structure (GDS) data 
+file
 }
 \description{
-This function will append a MethyLumiSet data object to a CoreArray Genomic Data Structure
- (GDS) data file, and return as a gds.class object.
+This function will append a MethyLumiSet data object to a CoreArray Genomic 
+Data Structure(GDS) data file, and return as a gds.class object.
 }
 \usage{
 app2gds(m, bmln)
@@ -13,22 +14,19 @@ app2gds(m, bmln)
 
 \arguments{
 \item{m}{
-The MethyLumiSet object to be appended to the CoreArray Genomic Data Structure (GDS) 
-data file
+The MethyLumiSet object to be appended to the CoreArray Genomic Data Structure 
+(GDS) data file
 }
 \item{bmln}{
 
 Either: 
 A gds.class object
 
-
 Or:
 A character string specifying the name of an existing .gds file to write to.
 
-
 Or:
 A character string specifying the name of a new .gds file to write to
-
 }
 }
 

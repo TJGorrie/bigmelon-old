@@ -4,19 +4,20 @@
 Read finalreport files and convert to genomic data structure files
 }
 \description{
-Function to easily load Illumina methylation data into a genomic data structure (GDS) file.
+Function to easily load Illumina methylation data into a genomic data 
+structure (GDS) file.
 }
 \usage{
 finalreport2gds(finalreport, gds, ...)
 }
 \arguments{
-  \item{finalreport}{
+\item{finalreport}{
 A filename of the text file exported from GenomeStudio
 }
-  \item{gds}{
+\item{gds}{
 The filename for the gds file to be created
 }
-  \item{\dots}{
+\item{\dots}{
 Additional arguments passed to \code{\link[methylumi]{methylumiR}}
 }
 }
