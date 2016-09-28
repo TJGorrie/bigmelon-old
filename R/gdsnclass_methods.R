@@ -1010,6 +1010,7 @@ setMethod(
     f = "dmrse_row",
     signature(betas = "gdsn.class"),
     definition = function(betas, idmr = iDMR()){
+        object <- betas
         betas <- object[idmr, ,name = TRUE]
         dmrse_row( betas, idmr )
     }
@@ -1029,6 +1030,7 @@ setMethod(
     f = "dmrse_col",
     signature(betas = "gdsn.class"),
     definition=function(betas, idmr = iDMR()){
+        object <- betas
         betas <- object[idmr, ,name = TRUE]
         dmrse_col(betas, idmr)
     }

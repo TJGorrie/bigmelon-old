@@ -61,12 +61,11 @@ Who to contact: <tgorri@essex.ac.uk>
 }
 
 \examples{
-barcodes <- "barcodes or Path to barcodes"
-\dontrun{
-m <- methylumIDAT(barcodes)
-e <- es2gds(m,"barcode.gds")
-i <- iadd(barcodes,e)
-i <- iadd2(barcodes, e)
+if(require('minfiData')){
+bd <- system.file('extdata', package='minfiData')
+gfile <- iadd2(file.path(bd, '5723646052'), gds = 'melon.gds')
+closefn.gds(gfile)
+unlink('melon.gds')
 }
 }
 
