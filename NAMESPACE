@@ -6,13 +6,4 @@ seabi, pfilter)
 importFrom('stats', 'approx', 'coef', 'density', 'fivenum', 'lm',
     'median', 'na.omit', 'sd')
 importFrom('utils', 'data', 'file_test', 'packageVersion')
-importFrom('Biobase', 'annotatedDataFrameFrom', 'assayData',
-    'assayDataElement', 'assayDataNew',
-    'fData', 'fData<-', 'pData', 'pData<-')
-importFrom('minfi', 'MethylSet', 'getProbeInfo', 'getRed',
-    'getAnnotation', 'getBeta', 'getGreen', 'getMeth', 'getUnmeth',
-    'preprocessRaw', 'detectionP')
-importFrom('methylumi', 'QCdata', 'betas','methylumiR', 
-    'methylated', 'unmethylated', 'pvals')
-importMethodsFrom('methylumi', 'getHistory')
-import(wateRmelon,gdsfmt, methods)
+import(wateRmelon, gdsfmt, methods, minfi, methylumi, Biobase)
